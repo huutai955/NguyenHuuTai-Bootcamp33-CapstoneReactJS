@@ -1,0 +1,183 @@
+.search {
+
+    .container {
+
+        .form {
+            padding-top: 70px;
+            width: 50%;
+            display: flex;
+            margin-bottom: 45px;
+            @media only screen and (max-width: 992px) {
+                width: 100%;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                input {
+                    padding: 10px 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $text-c14-color;
+                }
+
+                button {
+                    @include btnSubmitRegister;
+                    padding: 13px 29px;
+                    text-transform: uppercase;
+                }
+            }
+            .searchInput {
+                @media only screen and (max-width: 992px) {
+                  margin: 0;
+                  margin-right: 15px !important;
+                }
+            }
+        }
+
+        .searchText {
+            font-weight: 400;
+            font-size: 40px;
+            background: $bg-c2-color;
+            color: $text-c1-color;
+            padding: 14px 0;
+            padding-left: 30px;
+
+        }
+
+        .searchResult {
+
+            h4 {
+                font-weight: 500;
+                font-size: 18px;
+                color: $text-c14-color;
+                margin-top: 27px;
+                @media only screen and (max-width: 576px) {
+                    font-size: 22px;
+                }
+            }
+
+            .btnsort {
+                font-weight: 400;
+                font-size: 16px;
+                color: $text-c15-color;
+                padding: 15px 14px;
+                border: none;
+                width: 34.2%;
+                display: flex;
+                justify-content: space-between;
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+
+            .search__select {
+                label {
+                    @media only screen and (max-width: 576px) {
+                        font-size: 22px;
+                    }
+                }
+                select {
+                    width: 34.2%;
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+
+            .row {
+            
+                @media only screen and (max-width: 576px) {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 50px;
+                }
+                @media only screen and (min-width: 577px) and (max-width: 992px) {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 50px;
+                 }
+                
+
+                .col-4 {
+                    width: 30%;
+                    margin: 14px;
+                    padding: 0;
+                    background-color: $bg-c3-color;
+                    @media only screen and (max-width: 576px) {
+                        width: 90%;
+                        margin: 0;
+                        margin-bottom: 30px;
+                    }
+
+                    @media only screen and (min-width: 577px) and (max-width: 992px) {
+                       width: 40%;
+                    }
+
+
+                    img {
+                        padding: 45px 55px;
+                    }
+
+                    .product__body {
+                        padding: 0 23px;
+
+                        h3 {
+                            height: 25px;
+                            font-weight: 300;
+                            font-size: 24px;
+                            @media only screen and (min-width: 577px) and (max-width: 992px) {
+                               height: 50px;
+                             }
+                        }
+
+                        p {
+                            height: 95px;
+                            margin: 0;
+                            font-weight: 300;
+                            font-size: 20px;
+                            color: $text-c3-color;
+                        }
+                    }
+
+                    .product__footer {
+                        display: flex;
+
+                        a {
+                            @include btn-carousel;
+                            width: 50%;
+                            text-decoration: none;
+                            text-align: center;
+                            background-color: $bg-c4-color;
+                            @media only screen and (min-width: 577px) and (max-width: 992px) {
+                                font-size: 18px;
+                             }
+         
+                        }
+
+                        span {
+                            width: 50%;
+                            font-weight: 600;
+                            font-size: 24px;
+                            color: $text-c2-color;
+                            background-color: $bg-c5-color;
+                            padding: 10px;
+                            text-align: right;
+                            padding-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

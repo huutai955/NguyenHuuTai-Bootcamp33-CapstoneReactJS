@@ -1,0 +1,85 @@
+@import '../themes/variable';
+
+
+.header {
+
+    .header__top {
+        background-color: $bg-c1-color !important;
+        padding: 0 !important;
+            .container {
+    
+                .header__second {
+    
+                    ul {
+                        align-items: center;
+                        @media only screen and (max-width: 992px) {
+                            align-items: flex-start; 
+                            padding: 30px 0;
+                        }
+
+                       
+    
+                        li {
+    
+                            padding: 3px 10px !important;
+    
+    
+                            a {
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $text-c4-color;
+                                font-weight: 300;
+                                font-size: 16px;
+                                padding: 0 !important;
+                            }
+    
+                            .header__search {
+                                font-weight: 300;
+                                font-size: 30px;
+                                color: $text-c1-color;
+                            }
+                        }
+                        .btnLogout {
+                            color: $text-c1-color;
+                            background-color: $bg-c1-color;
+                            border: none;
+                            @media only screen and (max-width: 992px) {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    background-color: $bg-c3-color;
+                    padding: 1px 5px;
+                }
+            }
+    }
+
+    .header__bottom {
+
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                padding: 15px 0;
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: $text-c2-color;
+                    padding-right: 25px;
+                    @media only screen and (max-width: 576px) {
+                        font-size: 16px;
+                    } 
+                }
+            }
+        }
+    }
+
+}

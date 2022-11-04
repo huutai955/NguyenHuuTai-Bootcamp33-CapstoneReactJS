@@ -1,4 +1,22 @@
-// Import theo thứ tự 
-// Components
-// Pages
-// Templates
+@import './assests/scss/components/HeaderHome.scss';
+@import './assests/scss/components/FooterHome.scss';
+@import './assests/scss/pages/Cart.scss';
+@import './assests/scss/pages/Detail';
+@import './assests/scss/pages/Home';
+@import './assests/scss/pages/Login';
+@import './assests/scss/pages/Profile';
+@import './assests/scss/pages/Register';
+@import './assests/scss/pages/Search';
+@import './assests/scss/pages/ChangePassword';
+@import './assests/scss/pages/Map';
+@import './assests/scss/templates/HomeTemplate';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+

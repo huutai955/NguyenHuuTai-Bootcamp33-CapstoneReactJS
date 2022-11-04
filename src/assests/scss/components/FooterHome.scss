@@ -1,0 +1,88 @@
+.footer {
+
+    .footer__top {
+        padding: 25px 0;
+        background-color: $bg-c7-color;
+
+        .row {
+            margin: 0 auto;
+            @media only screen and (max-width: 576px) {
+                display: flex;   
+                flex-wrap: nowrap;    
+            }
+
+            .col-4 {
+                @media only screen and (max-width: 576px) {
+                    width: calc(100%/3);
+                }
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: $text-c2-color;
+                    margin-bottom: 7px;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 10px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: $text-c2-color;
+
+                        }
+                    }
+                }
+            }
+
+            .footer__middle {
+
+                padding-left: 67px;
+                padding-right: 130px;
+                border-left: 1px solid $bg-c5-color;
+                border-right: 1px solid $bg-c5-color;
+                @media only screen and (max-width: 576px) {
+                    padding: 0;
+                    text-align: center;
+                }
+                
+            }
+
+            .footer__end {
+                padding-left: 105px;
+                @media only screen and (max-width: 576px) {
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+
+            .footer__first {
+                padding-left: 56px;
+                @media only screen and (max-width: 576px) {
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        background-color: $bg-c6-color;
+        box-shadow: -2px -6px 11px -4px rgba(0, 0, 0, 0.48);
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            color: $text-c2-color;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}

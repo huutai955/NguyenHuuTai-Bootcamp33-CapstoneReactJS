@@ -1,0 +1,179 @@
+.header {
+  background-color: #000000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .header__second ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.header .container .header__second ul li {
+  list-style: none;
+  padding: 3px 10px !important;
+}
+.header .container .header__second ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #F7F7F7;
+  font-weight: 300;
+  font-size: 16px;
+}
+.header .container .header__second ul li .header__search {
+  font-weight: 300;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.footer .footer__top {
+  padding: 25px 0;
+  background-color: #FFFFFF;
+}
+.footer .footer__top .row {
+  margin: 0 auto;
+}
+.footer .footer__top .row .col-4 h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+.footer .footer__top .row .col-4 ul {
+  margin: 0;
+  padding: 0;
+}
+.footer .footer__top .row .col-4 ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer .footer__top .row .col-4 ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+.footer .footer__top .row .footer__middle {
+  padding-left: 67px;
+  padding-right: 130px;
+  border-left: 1px solid #DEDDDC;
+  border-right: 1px solid #DEDDDC;
+}
+.footer .footer__top .row .footer__end {
+  padding-left: 105px;
+}
+.footer .footer__top .row .footer__first {
+  padding-left: 56px;
+}
+.footer .footer__bottom {
+  background-color: #D9D9D9;
+  box-shadow: -2px -6px 11px -4px rgba(0, 0, 0, 0.48);
+}
+.footer .footer__bottom p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
+
+.home .container .carousel {
+  background-image: url("../../../../public/img/bgcarousel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 45px;
+}
+.home .container .carousel .carousel-inner .carousel-item .row {
+  display: flex;
+  align-items: center;
+}
+.home .container .carousel .carousel-inner .carousel-item .row .col-8 {
+  padding-left: 10%;
+}
+.home .container .carousel .carousel-inner .carousel-item .row .col-4 h3 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #000000;
+}
+.home .container .carousel .carousel-inner .carousel-item .row .col-4 p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #000000;
+}
+.home .container .carousel .carousel-inner .carousel-item .row .col-4 button {
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #F8B653;
+  padding: 13px 35px;
+  border: none;
+}
+.home .container .carousel .carousel-indicators {
+  margin: 0;
+}
+.home .container .carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.home .container .productfeature {
+  padding-bottom: 105px;
+  padding-top: 50px;
+}
+.home .container .productfeature h3 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+.home .container .productfeature .row .col-4 {
+  padding: 30px;
+}
+.home .container .productfeature .row .col-4 img {
+  padding: 45px 55px;
+}
+.home .container .productfeature .row .col-4 .product__body h3 {
+  height: 25px;
+  font-weight: 300;
+  font-size: 24px;
+}
+.home .container .productfeature .row .col-4 .product__body p {
+  height: 95px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  color: #CBC9C9;
+}
+.home .container .productfeature .row .col-4 .product__footer {
+  display: flex;
+}
+.home .container .productfeature .row .col-4 .product__footer button {
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #F8B653;
+  padding: 13px 35px;
+  border: none;
+  width: 50%;
+}
+.home .container .productfeature .row .col-4 .product__footer span {
+  width: 50%;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  background-color: #DEDDDC;
+  padding: 10px;
+  text-align: right;
+  padding-right: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}

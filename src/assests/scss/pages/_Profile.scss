@@ -1,0 +1,294 @@
+.profile {
+
+    .container {
+
+        .profileText {
+            background: $bg-c2-color;
+            color: $text-c1-color;
+            font-weight: 400;
+            font-size: 40px;
+            width: 35%;
+            padding: 15px 0;
+            padding-left: 35px;
+            margin-bottom: 40px;
+
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .row {
+            .col-2 {
+                img {
+                    border-radius: 50%;
+
+                    @media only screen and (max-width: 576px) {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .col-10 {
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+
+                .form {
+
+                    .row {
+                        .col-6 {
+                            padding: 0 30px;
+
+                            @media only screen and (max-width: 576px) {
+                                width: 100%;
+                            }
+
+                            .form-group {
+                                position: relative;
+                                padding-bottom: 20px;
+
+                                p {
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    color: $text-c11-color;
+                                    margin: 0;
+                                }
+
+                                input {
+                                    padding: 14px 12px;
+                                }
+
+                                .genderNameRadio {
+                                    width: 20%;
+                                }
+
+                                .radioinput {
+                                    display: flex;
+                                    width: 80%;
+
+                                    @media only screen and (max-width: 576px) {
+                                        padding-left: 20px;
+                                    }
+
+                                    .male,
+                                    .female {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+
+                                        input {
+                                            height: 20px;
+                                        }
+
+                                    }
+
+                                    .male {
+                                        margin-right: 20px;
+                                    }
+                                }
+
+                                .btnSubmit {
+                                    @include btnSubmitRegister;
+                                    padding: 16px 35px;
+                                    text-transform: uppercase;
+                                    text-align: right;
+                                }
+
+                                .errorsTextInput {
+                                    color: $text-c12-color;
+                                }
+
+                                .btn-eye {
+                                    border: none;
+                                    position: absolute;
+                                    top: 42px;
+                                    right: 22px;
+                                    background-color: $bg-c7-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .orderhistory {
+            @media only screen and (max-width: 576px) {
+                padding-top: 50px;
+            }
+
+            .nav-tabs {
+                border-bottom: 1px solid $bg-c5-color;
+                border-left: 1px solid $bg-c5-color;
+                width: 50%;
+                justify-content: space-between;
+
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+
+                .nav-item {
+                    width: 50%;
+
+                    .nav-link {
+                        width: 100%;
+                        color: $text-c2-color !important;
+                        font-weight: 400;
+                        font-size: 32px;
+                        border-bottom: 1px solid $bg-c5-color;
+                        border-right: 1px solid $bg-c5-color;
+                        border-left: 1px solid $bg-c5-color;
+                        border-top: none;
+                        border-radius: 0;
+                        margin: 0;
+
+                        @media only screen and (max-width: 992px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .active {
+                        color: $text-c13-color !important;
+                    }
+
+                }
+            }
+
+            .tab-content {
+                padding-top: 65px;
+
+                .tab-pane {
+
+
+                    h4 {
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: $text-c16-color;
+
+                        @media only screen and (max-width: 576px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    table {
+                        margin-bottom: 100px;
+
+                        thead {
+                            background-color: $bg-c6-color;
+
+                            tr {
+
+                                th {
+                                    padding: 18px;
+                                    text-align: center;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    color: $text-c2-color;
+
+                                    @media only screen and (max-width: 576px) {
+                                        padding: 13px 8px;
+                                        font-size: 15px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        tbody {
+
+                            tr {
+
+                                td {
+                                    text-align: center;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    color: $text-c2-color;
+
+                                    @media only screen and (max-width: 576px) {
+                                        font-size: 10px;
+                                    }
+
+                                    img {
+                                        @media only screen and (max-width: 576px) {
+                                            width: 50px;
+                                        }
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    h5 {
+                        font-weight: 400;
+                        font-size: 40px;
+                        color: $text-c2-color;
+                        text-align: center;
+                    }
+
+                    .row {
+
+                        .col-4 {
+                            padding: 30px;
+                            position: relative;
+
+                            @media only screen and (max-width: 576px) {
+                                width: 100%;
+                            }
+
+                            @media only screen and (min-width: 577px) and (max-width: 992px) {
+                                width: 50%;
+                            }
+
+                            img {
+                                padding: 45px 55px;
+                                background-color: $bg-c9-color;
+                            }
+
+                            .heart {
+                                padding: 0;
+                                position: absolute;
+                                right: 45px;
+                                top: 60px;
+                            }
+
+                            .product__body {
+                                background-color: $bg-c9-color;
+
+                                h3 {
+                                    height: 25px;
+                                    font-weight: 300;
+                                    font-size: 24px;
+                                    padding: 0 15px;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                }
+
+                            }
+
+                            .product__footer {
+                                display: flex;
+                                margin-top: 55px;
+
+                                a {
+                                    @include btn-carousel;
+                                    width: 190%;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    background-color: $bg-c4-color;
+                                    color: $text-c2-color;
+                                    font-weight: 400;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

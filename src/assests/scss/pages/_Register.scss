@@ -1,0 +1,121 @@
+.register {
+    padding-bottom: 75px;
+    background-color: $bg-c10-color;
+
+    .container {
+
+        h3 {
+            font-weight: 400;
+            font-size: 40px;
+            color: $text-c2-color;
+            padding: 45px 0;
+            margin: 0 75px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid $bg-c5-color;
+        }
+
+        .form {
+
+            .row {
+                @media only screen and (max-width: 768px) {
+                    flex-wrap: wrap;
+                }
+
+                .col-6 {
+                    padding: 0 85px;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                        padding: 0 10px;
+                    }
+
+                    @media only screen and (min-width: 769px) and (max-width: 992px){
+                        padding: 0 10px;
+                    }
+
+
+
+                    .form-group {
+                        position: relative;
+                        padding-bottom: 20px;
+                        
+
+                        p {
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: $text-c11-color;
+                            margin: 0;
+                        }
+
+                        input {
+                            padding: 14px 12px;
+                        }
+
+                        .genderNameRadio {
+                            width: 20%;
+                            @media only screen and (max-width: 768px) {
+                                margin: 0 !important;
+                             }   
+                             @media only screen and (min-width: 769px)   and (max-width: 992px){
+                                margin: 0 !important;
+                            }
+                        }
+
+                        .radioinput {
+                            display: flex;
+                            width: 100%;
+                            @media only screen and (max-width: 768px) {
+                                width: 80%;
+                                padding-left: 20px;
+                             }   
+                             @media only screen and (min-width: 769px)   and (max-width: 992px){
+                                width: 80%;
+                            }
+
+                            .male,
+                            .female {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                input {
+                                    height: 20px;
+                                }
+
+                                p {}
+                            }
+
+                            .male {
+                                margin-right: 20px;
+                            }
+                        }
+
+                        .btnSubmit {
+                            @include btnSubmitRegister;
+                            padding: 16px 35px;
+                            text-transform: uppercase;
+                        }
+
+                        .errorsTextInput {
+                            color: $text-c12-color;
+                        }
+
+                        .btn-eye {
+                            border: none;
+                            position: absolute;
+                            top: 42px;
+                            right: 22px;
+                            background-color: $bg-c7-color;
+                        }
+                    }
+
+                    .registerBtnForm {
+                        @media only screen and (max-width: 768px) {
+                            text-align: center;
+                         }   
+                    }
+                }
+            }
+        }
+    }
+}
