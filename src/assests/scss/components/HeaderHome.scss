@@ -32,6 +32,11 @@
                                 font-weight: 300;
                                 font-size: 16px;
                                 padding: 0 !important;
+                                transition: 0.7s;
+
+                                &:hover {
+                                    color: $text-c8-color;
+                                }
                             }
     
                             .header__search {
@@ -44,6 +49,11 @@
                             color: $text-c1-color;
                             background-color: $bg-c1-color;
                             border: none;
+                            transition: 0.7s;
+
+                            &:hover {
+                                color: $text-c8-color;
+                            }
                             @media only screen and (max-width: 992px) {
                                 padding-left: 10px;
                             }
@@ -74,6 +84,10 @@
                     font-size: 20px;
                     color: $text-c2-color;
                     padding-right: 25px;
+                    transition: 0.7s;
+                    &:hover {
+                        color: $text-c8-color;
+                    }
                     @media only screen and (max-width: 576px) {
                         font-size: 16px;
                     } 

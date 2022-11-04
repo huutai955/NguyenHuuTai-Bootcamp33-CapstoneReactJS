@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom';
 import { getAPIFavoriteProduct, getAPIProduct } from '../../redux/Reducers/productReducer';
 
+
 export default function Home() {
   const { arrProduct, arrFavoriteProduct } = useSelector(state => state.productReducer);
   const dispatch = useDispatch();
@@ -29,9 +30,9 @@ export default function Home() {
               <div className="carousel-item active">
                 <div className="row">
                   <div className="col-8">
-                    <img src={arrProduct[8]?.image} className="d-block w-61" alt="..." />
+                    <img src={arrProduct[8]?.image} className="d-block w-61 animate__animated animate__backInUp" alt="..." />
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 animate__animated animate__backInUp">
                     <h3>{arrProduct[8]?.name}</h3>
                     <p>{arrProduct[8]?.shortDescription}</p>
                     <NavLink className="btnBuyNow" to={`/detail/${arrProduct[8]?.id}`}>Buy now</NavLink>
@@ -41,9 +42,9 @@ export default function Home() {
               <div className="carousel-item">
                 <div className="row">
                   <div className="col-8">
-                    <img src={arrProduct[7]?.image} className="d-block w-61" alt="..." />
+                    <img src={arrProduct[7]?.image} className="d-block w-61 animate__animated animate__backInUp" alt="..." />
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 animate__animated animate__backInUp">
                     <h3>{arrProduct[7]?.name}</h3>
                     <p>{arrProduct[7]?.shortDescription}</p>
                     <NavLink className="btnBuyNow" to={`/detail/${arrProduct[7]?.id}`}>Buy now</NavLink>
@@ -53,9 +54,9 @@ export default function Home() {
               <div className="carousel-item">
                 <div className="row">
                   <div className="col-8">
-                    <img src={arrProduct[12]?.image} className="d-block w-61" alt="..." />
+                    <img src={arrProduct[12]?.image} className="d-block w-61 animate__animated animate__backInUp" alt="..." />
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 animate__animated animate__backInUp">
                     <h3>{arrProduct[12]?.name}</h3>
                     <p>{arrProduct[12]?.shortDescription}</p>
                     <NavLink className="btnBuyNow" to={`/detail/${arrProduct[12]?.id}`}>Buy now</NavLink>
@@ -93,9 +94,9 @@ export default function Home() {
                   <p>{prod.shortDescription}</p>
                 </div>
                 <div className="product__footer">
-                    <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
-                    <span>{prod.price}$</span>
-                  </div>
+                  <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
+                  <span>{prod.price}$</span>
+                </div>
               </div>
             })}
           </div>

@@ -31,6 +31,10 @@
                     @include btnSubmitRegister;
                     padding: 13px 29px;
                     text-transform: uppercase;
+                    transition: 0.8s;
+                    &:hover {
+                        background-color: $bg-c15-color;
+                    }
                 }
             }
             .searchInput {
@@ -112,6 +116,10 @@
                     margin: 14px;
                     padding: 0;
                     background-color: $bg-c3-color;
+                    transition: 0.8s;
+                    &:hover {
+                        box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
+                    }
                     @media only screen and (max-width: 576px) {
                         width: 90%;
                         margin: 0;
@@ -125,6 +133,10 @@
 
                     img {
                         padding: 45px 55px;
+                        transition: 0.8s;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
 
                     .product__body {
@@ -157,6 +169,10 @@
                             text-decoration: none;
                             text-align: center;
                             background-color: $bg-c4-color;
+                            transition: 0.8s;
+                            &:hover {
+                                background-color: $bg-c14-color;
+                            }
                             @media only screen and (min-width: 577px) and (max-width: 992px) {
                                 font-size: 18px;
                              }

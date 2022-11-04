@@ -16,7 +16,10 @@ import { store } from './redux/configStore';
 import {createBrowserHistory} from 'history';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
 import Map from './pages/Map/Map';
+import 'animate.css';
 export const history = createBrowserHistory();
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

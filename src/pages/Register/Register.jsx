@@ -117,7 +117,7 @@ export default function Register() {
 
               </div>
               <div className="form-group d-flex align-items-center flex-wrap">
-                <p style={{ marginRight: 36 }} className="genderNameRadio">Gender</p>
+                <p  className="genderNameRadio">Gender</p>
                 <div className='radioinput'>
                   <div className="male">
                     <input type="radio" name="gender" defaultValue={true} style={{ width: 24 }} onChange={formik.handleChange} />

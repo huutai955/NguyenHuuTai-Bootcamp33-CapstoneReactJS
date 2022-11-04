@@ -95,6 +95,10 @@
                                     padding: 16px 35px;
                                     text-transform: uppercase;
                                     text-align: right;
+                                    transition: 0.8s;
+                                    &:hover {
+                                        background-color: $bg-c16-color;
+                                    }
                                 }
 
                                 .errorsTextInput {
@@ -231,10 +235,18 @@
                     }
 
                     .row {
-
+                        padding: 50px 0;
                         .col-4 {
-                            padding: 30px;
+                            width: 30%;
+                            padding: 0;
+                            margin: 15px;
                             position: relative;
+                            overflow: hidden;
+                            transition: 0.8s;
+
+                            &:hover {
+                                box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
+                            }
 
                             @media only screen and (max-width: 576px) {
                                 width: 100%;
@@ -247,13 +259,18 @@
                             img {
                                 padding: 45px 55px;
                                 background-color: $bg-c9-color;
+                                transition: 0.8s;
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
                             }
 
                             .heart {
                                 padding: 0;
                                 position: absolute;
                                 right: 45px;
-                                top: 60px;
+                                top: 35px;
+                                z-index: 1;
                             }
 
                             .product__body {
@@ -266,6 +283,8 @@
                                     padding: 0 15px;
                                     text-transform: uppercase;
                                     text-align: center;
+                                    position: relative;
+                                    z-index: 1;
                                 }
 
                             }
@@ -283,6 +302,11 @@
                                     color: $text-c2-color;
                                     font-weight: 400;
                                     font-size: 24px;
+                                    transition: 0.8s;
+                                    &:hover {
+                                        background-color: $bg-c14-color;
+                                        
+                                    }
                                 }
                             }
                         }

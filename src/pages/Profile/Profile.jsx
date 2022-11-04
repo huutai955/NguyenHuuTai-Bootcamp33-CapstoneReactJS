@@ -7,6 +7,7 @@ import { settings, USERPROFILE } from '../../util/config';
 import * as Yup from 'yup'
 import { getAPIFavoriteProduct } from '../../redux/Reducers/productReducer';
 import { NavLink } from 'react-router-dom';
+import WOW from 'wowjs';
 
 export default function Profile() {
   let { profileUser } = useSelector(state => state.userReducer);
@@ -27,6 +28,9 @@ export default function Profile() {
     dispatch(action)
     const actionProfile = getAPIProfile();
     dispatch(actionProfile)
+    new WOW.WOW({
+      live: false
+    }).init();
     // eslint-disable-next-line
   }, [])
 
@@ -136,7 +140,7 @@ export default function Profile() {
             <div className="tab-content" id="myTabContent">
               <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 {profileUser.ordersHistory?.map((profile, index) => {
-                  return <div key={index}>
+                  return <div className='wow bounceInUp'  data-wow-duration="1s" data-wow-delay="1s" key={index}>
                     <h4>+ Orders have been placed on {profile.date}</h4>
                     <table className='w-100'>
                       <thead>
@@ -175,7 +179,7 @@ export default function Profile() {
                 <h5>The Favorite Shoes</h5>
                 <div className="row">
                   {arrFavoriteProduct.map((prod, index) => {
-                    return <div className="col-4" key={index}>
+                    return <div className="col-4 animate__animated animate__backInUp" key={index}>
                       <img src="./img/heartLike.png" className='heart' alt="" />
                       <img src={prod.image} className="w-100" alt="" />
                       <div className="product__body">

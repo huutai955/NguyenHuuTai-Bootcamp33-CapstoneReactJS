@@ -32,6 +32,9 @@ $bg-c10-color: #F5F5F5;
 $bg-c11-color: #1877F2;
 $bg-c12-color: #6200EE;
 $bg-c13-color: #F2994A;
+$bg-c14-color: #F50E0E;
+$bg-c15-color: #5e94c3;
+$bg-c16-color: #cbdd72;
 
 @mixin btn-carousel {
     font-weight: 300;
@@ -65,6 +68,8 @@ $bg-c13-color: #F2994A;
     color: $text-c10-color;
     border: none;
     padding: 14px 24px;
+    background-size: 200%;
+    background-position: right;
 }
 
 
