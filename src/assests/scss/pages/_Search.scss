@@ -7,6 +7,7 @@
             width: 50%;
             display: flex;
             margin-bottom: 45px;
+
             @media only screen and (max-width: 992px) {
                 width: 100%;
             }
@@ -32,15 +33,17 @@
                     padding: 13px 29px;
                     text-transform: uppercase;
                     transition: 0.8s;
+
                     &:hover {
                         background-color: $bg-c15-color;
                     }
                 }
             }
+
             .searchInput {
                 @media only screen and (max-width: 992px) {
-                  margin: 0;
-                  margin-right: 15px !important;
+                    margin: 0;
+                    margin-right: 15px !important;
                 }
             }
         }
@@ -62,6 +65,7 @@
                 font-size: 18px;
                 color: $text-c14-color;
                 margin-top: 27px;
+
                 @media only screen and (max-width: 576px) {
                     font-size: 22px;
                 }
@@ -76,6 +80,7 @@
                 width: 34.2%;
                 display: flex;
                 justify-content: space-between;
+
                 @media only screen and (max-width: 576px) {
                     width: 100%;
                 }
@@ -87,8 +92,10 @@
                         font-size: 22px;
                     }
                 }
+
                 select {
                     width: 34.2%;
+
                     @media only screen and (max-width: 576px) {
                         width: 100%;
                     }
@@ -98,96 +105,111 @@
 
 
             .row {
-            
-                @media only screen and (max-width: 576px) {
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 50px;
-                }
-                @media only screen and (min-width: 577px) and (max-width: 992px) {
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 50px;
-                 }
-                
+                padding: 50px 0;
+
 
                 .col-4 {
-                    width: 30%;
-                    margin: 14px;
-                    padding: 0;
-                    background-color: $bg-c3-color;
-                    transition: 0.8s;
-                    &:hover {
-                        box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
-                    }
+                    padding-bottom: 30px;
+
+
                     @media only screen and (max-width: 576px) {
-                        width: 90%;
+                        width: 100%;
                         margin: 0;
                         margin-bottom: 30px;
                     }
 
                     @media only screen and (min-width: 577px) and (max-width: 992px) {
-                       width: 40%;
+                        width: 50%;
+                    }
+
+                    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                        padding: 0;
+                        padding-bottom: 30px;
                     }
 
 
-                    img {
-                        padding: 45px 55px;
+                    .card {
+                        background-color: $bg-c3-color;
                         transition: 0.8s;
                         &:hover {
-                            transform: scale(1.2);
+                            box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
                         }
-                    }
-
-                    .product__body {
-                        padding: 0 23px;
-
-                        h3 {
-                            height: 25px;
-                            font-weight: 300;
-                            font-size: 24px;
-                            @media only screen and (min-width: 577px) and (max-width: 992px) {
-                               height: 50px;
-                             }
+                        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                            margin: 0 12px;
                         }
 
-                        p {
-                            height: 95px;
-                            margin: 0;
-                            font-weight: 300;
-                            font-size: 20px;
-                            color: $text-c3-color;
-                        }
-                    }
 
-                    .product__footer {
-                        display: flex;
-
-                        a {
-                            @include btn-carousel;
-                            width: 50%;
-                            text-decoration: none;
-                            text-align: center;
-                            background-color: $bg-c4-color;
+                        img {
+                            padding: 45px 55px;
                             transition: 0.8s;
+
                             &:hover {
-                                background-color: $bg-c14-color;
+                                transform: scale(1.2);
                             }
-                            @media only screen and (min-width: 577px) and (max-width: 992px) {
-                                font-size: 18px;
-                             }
-         
                         }
 
-                        span {
-                            width: 50%;
-                            font-weight: 600;
-                            font-size: 24px;
-                            color: $text-c2-color;
-                            background-color: $bg-c5-color;
-                            padding: 10px;
-                            text-align: right;
-                            padding-right: 40px;
+                        .product__body {
+                            padding: 0 23px;
+
+                            h3 {
+                                height: 25px;
+                                font-weight: 300;
+                                font-size: 24px;
+
+                                @media only screen and (min-width: 577px) and (max-width: 992px) {
+                                    height: 50px;
+                                }
+                                @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            p {
+                                height: 95px;
+                                margin: 0;
+                                font-weight: 300;
+                                font-size: 20px;
+                                color: $text-c3-color;
+                            }
+                        }
+
+                        .product__footer {
+                            display: flex;
+
+                            a {
+                                @include btn-carousel;
+                                width: 50%;
+                                text-decoration: none;
+                                text-align: center;
+                                background-color: $bg-c4-color;
+                                transition: 0.8s;
+
+                                &:hover {
+                                    background-color: $bg-c14-color;
+                                }
+
+                                @media only screen and (min-width: 577px) and (max-width: 768px) {
+                                    font-size: 12px;
+                                }
+                                @media only screen and (min-width: 769px) and (max-width: 1200px) {
+                                    font-size: 18px;
+                                }
+
+                            }
+
+                            span {
+                                width: 50%;
+                                font-weight: 600;
+                                font-size: 24px;
+                                color: $text-c2-color;
+                                background-color: $bg-c5-color;
+                                padding: 10px;
+                                text-align: right;
+                                padding-right: 40px;
+                                @media only screen and (min-width: 577px) and (max-width: 768px) {
+                                    font-size: 13px;
+                                }
+                            }
                         }
                     }
                 }
@@ -195,5 +217,3 @@
         }
     }
 }
-
-

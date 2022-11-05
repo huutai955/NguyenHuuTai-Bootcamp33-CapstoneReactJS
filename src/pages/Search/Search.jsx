@@ -108,6 +108,7 @@ export default function Search() {
           <div className="row">
             {arrSearchProduct ? arrSearchProduct?.map((prod, index) => {
               return <div className="col-4" key={index}>
+                <div className="card">
                 <img src={prod.image} className="w-100" alt="" />
                 <div className="product__body">
                   <h3>{prod.name}</h3>
@@ -117,9 +118,11 @@ export default function Search() {
                     <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
                     <span>{prod.price}$</span>
                   </div>
+                </div>
               </div>
             }) : arrCategory?.map((prod, index) => {
               return <div className="col-4" key={index}>
+                <div className="card">
                 <img src={prod.image} className="w-100" alt="" />
                 <div className="product__body">
                   <h3>{prod.name}</h3>
@@ -128,6 +131,7 @@ export default function Search() {
                 <div className="product__footer">
                   <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
                   <span>{prod.price}$</span>
+                </div>
                 </div>
               </div>
             })}

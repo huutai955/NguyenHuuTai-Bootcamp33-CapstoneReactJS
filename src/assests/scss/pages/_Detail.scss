@@ -144,17 +144,14 @@
                 }
 
                 .col-4 {
-                    width: 31%;
-                    margin: 15px;
-                    padding: 0 !important;
+                    padding-bottom: 30px;
                     @media only screen and (max-width: 576px) {
-                        width: 90%;
+                        width: 100%;
                     }
                     @media only screen and (min-width: 577px) and (max-width: 768px) {
-                        width: 42%;
+                        width: 50%;
                     }
                     
-                    padding: 30px;
                     @media only screen and (min-width: 769px) and (max-width:992px)  {
                         width: 50%;
                     }
@@ -193,13 +190,17 @@
                                 height: 25px;
                                 font-weight: 300;
                                 font-size: 24px; 
+                                @media only screen and (max-width: 576px) {
+                                    font-size: 21px;
+                                }
                                 @media only screen and (min-width: 769px) and (max-width:1280px)  {
                                     height: 50px;
                                 }
                                 @media only screen and (min-width: 577px) and (max-width: 768px) {
                                    height: 50px;
+                                   font-size: 17px;
                                 }
-                                
+                 
                                 
                             }
 
@@ -209,6 +210,13 @@
                                 font-weight: 300;
                                 font-size: 20px;
                                 color: $text-c3-color;
+                                @media only screen and (max-width: 576px) {
+                                    font-size: 17px;
+                                }
+                                @media only screen and (min-width: 577px) and (max-width: 768px) {
+                                    font-size: 15px;
+                                    text-align: left;
+                                }
                             }
                         }
 
@@ -232,7 +240,8 @@
                                     font-size: 18px;
                                 }
                                 @media only screen and (min-width: 577px) and (max-width: 768px) {
-                                   font-size: 18px;
+                                   font-size: 13px;
+                                   padding: 18px 35px;
                                 }
                                 
                             }

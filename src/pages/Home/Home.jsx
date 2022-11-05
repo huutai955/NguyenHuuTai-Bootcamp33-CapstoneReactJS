@@ -87,15 +87,17 @@ export default function Home() {
                 imgTag = <img src="./img/heartUnlike.png" className='heart' alt="" />
               }
               return <div className="col-4" key={index}>
-                {imgTag}
-                <img src={prod.image} className="w-100" alt="" />
-                <div className="product__body">
-                  <h3>{prod.name}</h3>
-                  <p>{prod.shortDescription}</p>
-                </div>
-                <div className="product__footer">
-                  <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
-                  <span>{prod.price}$</span>
+                <div className="card">
+                  {imgTag}
+                  <img src={prod.image} className="w-100" alt="" />
+                  <div className="product__body">
+                    <h3>{prod.name}</h3>
+                    <p>{prod.shortDescription}</p>
+                  </div>
+                  <div className="product__footer">
+                    <NavLink to={`/detail/${prod.id}`}>Buy now</NavLink>
+                    <span>{prod.price}$</span>
+                  </div>
                 </div>
               </div>
             })}

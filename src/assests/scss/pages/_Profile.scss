@@ -96,6 +96,7 @@
                                     text-transform: uppercase;
                                     text-align: right;
                                     transition: 0.8s;
+
                                     &:hover {
                                         background-color: $bg-c16-color;
                                     }
@@ -236,76 +237,85 @@
 
                     .row {
                         padding: 50px 0;
-                        .col-4 {
-                            width: 30%;
-                            padding: 0;
-                            margin: 15px;
-                            position: relative;
-                            overflow: hidden;
-                            transition: 0.8s;
 
-                            &:hover {
-                                box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
-                            }
+                        .col-4 {
+                            position: relative;
+                            padding-bottom: 30px;
+                           
 
                             @media only screen and (max-width: 576px) {
-                                width: 90%;
+                                width: 100%;
                             }
 
                             @media only screen and (min-width: 577px) and (max-width: 992px) {
-                                width: 42%;
+                                width: 50%;
                             }
 
-                            img {
-                                padding: 45px 55px;
-                                background-color: $bg-c9-color;
+                            .card {
                                 transition: 0.8s;
+                                overflow: hidden;
+
                                 &:hover {
-                                    transform: scale(1.2);
+                                    box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
                                 }
-                            }
+                                img {
+                                    padding: 45px 55px;
+                                    background-color: $bg-c9-color;
+                                    transition: 0.8s;
 
-                            .heart {
-                                padding: 0;
-                                position: absolute;
-                                right: 45px;
-                                top: 35px;
-                                z-index: 1;
-                            }
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
 
-                            .product__body {
-                                background-color: $bg-c9-color;
-
-                                h3 {
-                                    height: 25px;
-                                    font-weight: 300;
-                                    font-size: 24px;
-                                    padding: 0 15px;
-                                    text-transform: uppercase;
-                                    text-align: center;
-                                    position: relative;
+                                .heart {
+                                    padding: 0;
+                                    position: absolute;
+                                    right: 45px;
+                                    top: 35px;
                                     z-index: 1;
                                 }
 
-                            }
+                                .product__body {
+                                    background-color: $bg-c9-color;
 
-                            .product__footer {
-                                display: flex;
-                                margin-top: 55px;
+                                    h3 {
+                                        height: 25px;
+                                        font-weight: 300;
+                                        font-size: 24px;
+                                        padding: 0 15px;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        position: relative;
+                                        z-index: 1;
 
-                                a {
-                                    @include btn-carousel;
-                                    width: 190%;
-                                    text-decoration: none;
-                                    text-align: center;
-                                    background-color: $bg-c4-color;
-                                    color: $text-c2-color;
-                                    font-weight: 400;
-                                    font-size: 24px;
-                                    transition: 0.8s;
-                                    &:hover {
-                                        background-color: $bg-c14-color;
-                                        
+                                        @media only screen and (min-width: 577px) and (max-width: 768px) {
+                                            font-size: 19px;
+                                        }
+                                    }
+
+                                }
+
+                                .product__footer {
+                                    display: flex;
+                                    padding-top: 55px;
+                                    background-color: $bg-c9-color;
+
+                                    a {
+                                        @include btn-carousel;
+                                        width: 190%;
+                                        text-decoration: none;
+                                        text-align: center;
+                                        background-color: $bg-c4-color;
+                                        color: $text-c2-color;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        transition: 0.8s;
+
+                                        &:hover {
+                                            background-color: $bg-c14-color;
+
+                                        }
                                     }
                                 }
                             }

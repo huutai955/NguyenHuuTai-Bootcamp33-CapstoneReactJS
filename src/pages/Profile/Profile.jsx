@@ -139,7 +139,7 @@ export default function Profile() {
             <div className="tab-content" id="myTabContent">
               <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 {profileUser.ordersHistory?.map((profile, index) => {
-                  return <div className='wow bounceInUp'  data-wow-duration="1s" data-wow-delay="1s" key={index}>
+                  return <div className='wow bounceInUp' data-wow-duration="1s" data-wow-delay="1s" key={index}>
                     <h4>+ Orders have been placed on {profile.date}</h4>
                     <table className='w-100'>
                       <thead>
@@ -179,13 +179,15 @@ export default function Profile() {
                 <div className="row">
                   {arrFavoriteProduct.map((prod, index) => {
                     return <div className="col-4 animate__animated animate__backInUp" key={index}>
-                      <img src="./img/heartLike.png" className='heart' alt="" />
-                      <img src={prod.image} className="w-100" alt="" />
-                      <div className="product__body">
-                        <h3>{prod.name}</h3>
-                        <div className="product__footer">
-                          <NavLink to={`/detail/${prod.id}`}>Detail</NavLink>
+                      <div className="card">
+                        <img src="./img/heartLike.png" className='heart' alt="" />
+                        <img src={prod.image} className="w-100" alt="" />
+                        <div className="product__body">
+                          <h3>{prod.name}</h3>
                         </div>
+                        <div className="product__footer">
+                            <NavLink to={`/detail/${prod.id}`}>Detail</NavLink>
+                          </div>
                       </div>
                     </div>
                   })}
