@@ -139,6 +139,9 @@
                 @media only screen and (max-width: 576px) {
                     justify-content: center;
                 }
+                @media only screen and (min-width: 577px) and (max-width: 768px) {
+                    text-align: center;
+                }
 
                 .col-4 {
                     width: 31%;
@@ -148,7 +151,7 @@
                         width: 90%;
                     }
                     @media only screen and (min-width: 577px) and (max-width: 768px) {
-                        width: 50%;
+                        width: 42%;
                     }
                     
                     padding: 30px;
