@@ -18,7 +18,7 @@ export default function Detail() {
 
   useEffect(() => {
     settings.setStorageJson(arrCart, 'arrCart');
-  }, [arrCart]) 
+  }, [arrCart])
 
   return (
     <div className='detail'>

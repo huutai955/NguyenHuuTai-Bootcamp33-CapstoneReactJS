@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { message } from 'antd';
+import { history } from '../../index';
 import LoginFacebook from '../../Components/LoginFacebook/LoginFacebook';
 import { ACCESSTOKEN, http, settings, USERLOGIN, USERPROFILE } from '../../util/config';
 
@@ -21,17 +21,17 @@ const userReducer = createSlice({
             alert(state.message);
         },
         loginAccount: (state, action) => {
-            state.userAccount = action.payload
+            state.userAccount = action.payload;
         },
         sendErrorMessageLogin: (state, action) => {
-            state.messageLogin = action.payload
-            // alert(state.messageLogin)
+            state.messageLogin = action.payload;
+            alert(state.messageLogin);
         },
         getProfileUser: (state, action) => {
-            state.profileUser = action.payload
+            state.profileUser = action.payload;
         },
         updateProfile: (state, action) => {
-            state.messageUpdate = action.payload
+            state.messageUpdate = action.payload;
             alert(state.messageUpdate)
         },
         changePassword: (state, action) => {
@@ -67,7 +67,7 @@ export const loginAPI = (user) => {
             const action = loginAccount(result.data.content);
             await dispatch(action)
             const actionGetProfile = getAPIProfile();
-            dispatch(actionGetProfile)
+            dispatch(actionGetProfile);
             settings.setCookieJson(ACCESSTOKEN, result.data.content);
             settings.setStorage(result.data.content.accessToken, ACCESSTOKEN);
             settings.setStorageJson(result.data.content, USERLOGIN);
