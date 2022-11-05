@@ -65,7 +65,6 @@ export default function Profile() {
 
 
 
-  console.log(profileUser)
 
 
   return (
@@ -99,7 +98,7 @@ export default function Profile() {
                   </div>
                   <div className="form-group">
                     <p>Password</p>
-                    <input type="text" className='form-control' placeholder='Password' name='password' value={formik.values?.password} onChange={formik.handleChange} />
+                    <input type="password" className='form-control' placeholder='Password' name='password' value={formik.values?.password} onChange={formik.handleChange} />
                     <p className='errorsTextInput'>{formik.errors.password}</p>
                   </div>
                   <div className="form-group d-flex flex-wrap">
