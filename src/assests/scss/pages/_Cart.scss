@@ -23,19 +23,23 @@
                         font-weight: 400;
                         font-size: 20px;
                         color: $text-c2-color;
-                        
+
                         @media only screen and (max-width: 576px) {
                             padding: 15px 0;
                             font-size: 9px;
-                        }    
+                        }
 
-                       
+                        @media only screen and (min-width: 577px) and (max-width: 992px) {
+                            font-size: 12px;
+                        }
+
+
                     }
 
                     .checkTh {
                         @media only screen and (max-width: 576px) {
-                           display: none;
-                        }    
+                            display: none;
+                        }
                     }
                 }
             }
@@ -48,21 +52,23 @@
                         font-weight: 400;
                         font-size: 20px;
                         color: $text-c2-color;
+
                         @media only screen and (max-width: 576px) {
                             font-size: 10px;
-                        } 
-                      
+                        }
+
 
                         span {
                             background-color: $bg-c6-color;
                             padding: 0 25px;
                             margin: 0 15px;
+
                             @media only screen and (max-width: 576px) {
                                 font-size: 10px;
                                 margin: 0 10px;
                                 padding: 0 10px;
                                 line-height: 34px;
-                            }   
+                            }
                         }
 
                         .btnEdit {
@@ -75,10 +81,16 @@
                             font-size: 14px;
                             border: none;
                             margin-right: 25px;
+
                             @media only screen and (max-width: 576px) {
                                 font-size: 10px;
                                 margin: 0;
-                            }   
+                            }
+                            
+                            @media only screen and (min-width: 577px) and (max-width: 992px) {
+                                font-size: 12px;
+                            }
+                            
                         }
 
                         .btnDelete {
@@ -93,21 +105,26 @@
 
                             @media only screen and (max-width: 576px) {
                                 font-size: 10px;
-                            }   
+                            }
+
+                            @media only screen and (min-width: 577px) and (max-width: 992px) {
+                                font-size: 12px;
+                            }
+
                         }
 
                         img {
                             @media only screen and (max-width: 576px) {
                                 width: 70px;
                                 height: 70px;
-                            }   
+                            }
                         }
                     }
 
                     .checkTd {
                         @media only screen and (max-width: 576px) {
-                           display: none;
-                        }    
+                            display: none;
+                        }
                     }
 
                     .btnDeleteEdit {
@@ -119,10 +136,11 @@
                         display: flex;
                         padding: 32px 0;
                         justify-content: center;
-                        @media only screen and (max-width: 992px) {
+
+                        @media only screen and (max-width: 576px) {
                             padding: 15px 0;
-                        }    
-                        
+                        }
+
 
                         .increseAmount,
                         .decreaseAmount {
@@ -133,9 +151,10 @@
                             font-size: 14px;
                             color: $text-c1-color;
                             padding: 6px 14px;
+
                             @media only screen and (max-width: 576px) {
                                 padding: 8px;
-                            }   
+                            }
                         }
                     }
                 }
@@ -156,6 +175,7 @@
                 padding: 10px;
                 margin-top: 30px;
                 transition: 0.8s;
+
                 &:hover {
                     background-color: $bg-c15-color;
                 }
