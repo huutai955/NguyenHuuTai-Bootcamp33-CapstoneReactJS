@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { history } from '../../index';
 import LoginFacebook from '../../Components/LoginFacebook/LoginFacebook';
 import { ACCESSTOKEN, http, settings, USERLOGIN, USERPROFILE } from '../../util/config';
+import axios from 'axios';
 
 const initialState = {
     message: '',
@@ -63,7 +64,11 @@ export const postAPIUserAccount = (userAccount) => {
 export const loginAPI = (user) => {
     return async dispatch => {
         try {
-            const result = await http.post("api/Users/signin", user);
+            const result = await axios({
+                url: 'https://shop.cyberlearn.vn/api/Users/signin',
+                method: 'POST',
+                data: user
+            })
             const action = loginAccount(result.data.content);
             await dispatch(action)
             const actionGetProfile = getAPIProfile();
